@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    
+    
+}
+body{
+    background-image:url(./images/home.jpg);
+    background-size: cover;
+    opacity: 0.75;
+}
+:root{
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        padding:2vh ;
+        gap:15vw;
+        background:black
+    }
+    
+    .logo{
+        height: 15vh;
+        width:  12vw;
+    
+    
+    }
+    .navbut{
+        display: flex;
+        align-items: center;
+    }
+    .Register{
+   
+        height: 6vh;
+        width: 9vw;
+        font-size: 1.5vw;
+        border-radius: 25px;
+        background-color:rgba(255, 255, 0, 0.756);
+        color: white;
+        border: none;
+    }
+    .Register:hover{
+        cursor: pointer;
+    }
+    .navigation{
+        display: flex;
+        gap: 2vw;
+        align-items: center;
+    }
+    a{
+        font-size: 3vh;
+        text-decoration: none;
+        color:var(--GrayishBlue);
+    
+    }
+    .border{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding-left: 35vw;
+        padding-top: 5vh;
+      
+
+        /* align-items: center; */
+        gap: 5vh;
+        border: black;
+        /* padding: 5vh; */
+       
+    }
+    p{
+        font-size: 5vh;
+    }
+    input{
+        height: 5vh;
+        width: 15vw;
+    }
+    select{
+        height: 5vh;
+        width: 15vw;
+        font-size: 3.5vh;
+    }
+    .Submit{
+        padding-top: 4vh;
+        padding-left: 10vw
+    }
+    #Submit{
+        background-color: black;
+        color:var(--LightGrayishBlue);
+        font-size: 5vh;
+        border-radius: 35px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    @media(max-width:500px){
+        .navigation{
+            display:none;
+        }
+        #navbut{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+            padding-top: 5vh;
+            padding-left: 45VW;
+        }
+       
+    
+    
+        .hidden{
+            display: none;
+            padding-left: 64vw;
+        }
+        .hiddenChild{
+            display: block;
+            flex-direction: column;
+            border: 1px solid black;
+    
+        }
+       
+    }

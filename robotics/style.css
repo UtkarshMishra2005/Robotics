@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+:root{
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding:2vh ;
+    gap:15vw;
+    background-color: black;
+}
+
+.logo{
+    height: 15vh;
+    width:  12vw;
+
+
+}
+.navbut{
+    display: flex;
+    align-items: center;
+}
+#robotics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Register{
+   
+    height: 6vh;
+    width: 9vw;
+    font-size: 1.5vw;
+    border-radius: 25px;
+    background-color:greenyellow;
+    color: white;
+    border: none;
+}
+.Register:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.navigation{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+a{
+    font-size: 3vh;
+    text-decoration: none;
+    color:var(--GrayishBlue);
+
+}
+.herosection{
+    background-color: var(--LightGrayishBlue);
+    padding: 2vh;
+    display: flex;
+    gap: 5vw;
+    overflow: hidden ;
+   
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.Intro{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items:center ;
+    justify-content: center;
+    font-size: 4vh;
+    padding-left: 2vw;
+
+}
+.heroimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37vw;
+    width: 50vw;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 9vh;
+    color: black
+}
+#event{
+    color: white;
+}
+.text{
+    font-size:5vh;
+    color: var(--GrayishBlue);
+    display: flex;
+
+    justify-content: center;
+   
+}
+.about{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4vh ;
+    padding: 5vw;
+    background-color: black;}
+    
+.pastevents{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    gap: 4vh;
+    background: var(--LightGrayishBlue);
+}
+.eventimg{
+    display: flex;
+    /* max-width: 100%; */
+    /* padding: 5vh; */
+    gap: 3vw;
+    
+}
+.event{
+    width: 22vw;;
+    height: 22vw; ;
+
+}
+.fotter{
+    display: flex;
+    padding: 5vh;
+    gap: 30vw;
+    background-color: black
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap:2vw;
+}
+a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.event-detail{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    
+    
+}
+.hidden{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.abouth{
+    font-size: 8vh;
+    padding: 1vh;
+    color:var(--GrayishBlue)
+}
+.aboutt{
+    font-size: 5vh;
+    padding: 1vh;
+    color:var(--DarkBlue);
+}
+.hamburger{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+@media (max-width:500px) {
+    .herosection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Register{
+   
+        height: 8vh;
+        width: 26vw;
+        font-size: 5vw;
+        border-radius: 25px;
+        background-color:rgba(255, 255, 0, 0.756);
+        color: white;
+        border: none;
+    }
+    .event-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutt{
+        text-align: center;
+    }
+    .abouth{
+        text-align: center;
+    }
+    .eventimg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .fotter{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 1vh;
+    }
+    #footbut{
+        padding-top: 4vh;
+    }
+    .text{
+        text-align: center;
+    }
+    
+    .event{
+        width: 90vw;
+        height: 90vw;
+        
+    }
+    .navbar{
+        padding-left:8vw ;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+
+    }
+    .heroimage{
+        width: 90vw;
+        height: 90vw;
+    }
+    .navigation{
+        display:none;
+    }
+    #navbut{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        padding-top: 5vh;
+        padding-left: 45VW;
+    }
+   
+
+
+    .hidden{
+        display: none;
+        line-height: 6vh;
+        border-bottom: 1vh solid gray;
+    }
+    .hiddenChild{
+        display: block;
+        flex-direction: column;
+        border: 1px solid black;
+
+    }
+   
+}
